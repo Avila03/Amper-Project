@@ -1,0 +1,44 @@
+ // {
+    //     "mType":"1-4",   
+    //          1- Mensaje de operación (MSG_TYPE_OPER) - Funcionamento normal   
+    //          2- Mensaje de alarma (MSG_TYPE_ALAR) - Disparou alarme
+    //          3- Mensaje de mantenimiento (MSG_TYPE_MANT) - Precisa de manutençao
+    //          4- Mensaje de operación-mantenimiento (MSG_TYPE_OPER_MANT) - Esta em manutençao
+
+    //     "hwv":"1 byte",
+    //          Versão do Hardware - Nenhuma função específica
+    //     "seq":"2", ?????
+    //     "pv":"10",
+    //          Valor sempre 10 - Nenhuma função específica
+    //     "sn":"12 Caracteres",
+    //          Número de Série - Retornar numero de série
+    //     "opStat":"1-5",
+    //          1- STAT_INITIAL - 0xFF
+    //          2- STAT_FAB - 0x00
+    //          3- STAT_CALIBRATED  - 0x01
+    //          4- STAT_REGISTERED  - 0x02
+    //          5- STAT_OPERATIVE   - 0x03
+    //     "dateTime":"YY/MM/DD,h:m:s+08,",  Datada mediçao final
+    //     "cellId":"Integer 32", - Cell ID NBIoT - Nenhuma Funcao especifica
+    //     "tac":"Integer 32", - Localizar area do codigo NBIoT - Nenhuma funcao especifica
+    //     "sigPw":"Num", - Potencia do sinal NBIoT - Return dBm
+    //     "totPw":"Num", - Potencia Total NBIoT - Return dBm
+    //     "ecl":"Num", - ECL NBIoT - 1,2,3
+    //     "snr":"Num", - SRN NBIoT - Nenhuma funcao especifica
+    //     "ctTx":¿¿?????
+    //     "txTime": Tempo total que transmitiu as informaçoes (minutos)
+    //     "measTime":Tempo total medido (minutos)
+    //     "measInt":Intervalo entre as  medidas (minutos)
+    //     "al":Código do alarme, botar Byte codificado por bits
+    // ALR_TAMPER	0x01
+    // ALR_LOW_PRESSURE	0x02
+    // ALR_HIGH_PRESSURE	0x04
+    // ALR_HYD_SHOCK	0x08
+    // ALR_VIBRATION	0x10
+    //     "bat": voltagem em milivolt - bateria
+    //     "tem": temperatura em decimais de grau
+    //     "mf":  Campo Magnético medido pela maquina
+    //     "pre": Pressao medidas durante intervalo - Fazer Array com valores, sendo ordem de acontecimento 
+    //     "crc" 4 bytes codificados como 8 caracteres alfanuméricos.
+    //     "hash":"22B60846" - Hash entregue do produto
+    //     }

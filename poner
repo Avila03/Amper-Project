@@ -1,0 +1,9 @@
+   public void save()
+        try (FileWriter myWriter = new FileWriter("Description.txt")) {
+
+         {
+                myWriter.write(p.getClass().toString().substring(10) + ";");
+                myWriter.write(p.getEnergia() + "\n");
+
+            }
+}
